@@ -30,7 +30,7 @@ The course is designed for both beginners and experienced developers who want to
 
 ## Syllabus
 
-The detailed syllabus can be found [here](https://www.appbrewery.com/the-complete-2023-web-development-bootcamp).
+The detailed syllabus can be found [here]([https://www.appbrewery.com/the-complete-2023-web-development-bootcamp](https://www.appbrewery.co/p/the-complete-web-development-course)).
 
 ## Getting Started
 
