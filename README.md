@@ -14,7 +14,7 @@ The course is designed for both beginners and experienced developers who want to
 - [Syllabus](#syllabus)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
-- [Contributing](#contributing)
+- [Structure](#structure)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -46,66 +46,58 @@ The projects in this repository generally require only a web browser and a code 
 
 ## Structure
 
-├── projects/                 # Directory for all the course projects
-│   ├── project1/             # Project 1 - Description (e.g., personal portfolio website)
-│   ├── project2/             # Project 2 - Description (e.g., weather app)
-│   ├── ...                   # More project folders
-│   └── project16/            # Project 16 - Description (e.g., full-stack web app)
-│
-├── HTML/                     # Directory for HTML files
-│   ├── index.html
-│   ├── lists.html
-│   ├── hyperlinks.html
-│   ├── multi_page_website/
-│   └── ...                   # Other HTML files and folders
-│
-├── CSS/                      # Directory for CSS files
-│   ├── inline_internal_external.css
-│   ├── css_selectors_properties.css
-│   ├── flexbox.css
-│   ├── bootstrap/
-│   └── ...                   # Other CSS files and folders
-│
-├── JavaScript/               # Directory for JavaScript files
-│   ├── basics.js
-│   ├── functions.js
-│   ├── arrays.js
-│   ├── objects.js
-│   ├── es6_features.js
-│   ├── dom_manipulation/
-│   └── ...                   # Other JavaScript files and folders
-│
-├── Node.js/                  # Directory for Node.js files
-│   ├── node_basics.js
-│   ├── express.js
-│   ├── mongo_db/
-│   └── ...                   # Other Node.js files and folders
-│
-├── React/                    # Directory for React files
-│   ├── react_basics.js
-│   ├── react_state_management.js
-│   ├── react_components.js
-│   ├── react_forms.js
-│   ├── react_router.js
-│   └── ...                   # Other React files and folders
-│
-├── Web3_and_DApps/           # Directory for Web3 and DApps files
-│   ├── web3_basics.js
-│   ├── smart_contract1.js
-│   ├── smart_contract2.js
-│   └── ...                   # Other Web3 and DApps files and folders
-│
-├── resources/                # Additional resources (e.g., cheat sheets, design assets)
-│   ├── cheat_sheets/
-│   ├── design_assets/
-│   └── ...                   # Other resource files and folders
-│
-├── README.md                 # Main README file with course description and instructions
-├── LICENSE                   # License file
-├── .gitignore                # Git ignore file
-├── .editorconfig             # Editor configuration file
-├── package.json              # Package.json (if applicable)
-└── ...                       # Other files and folders as needed
+- projects/                 # Directory for all the course projects
+  - project1/               # Project 1 - Description (e.g., personal portfolio website)
+  - project2/               # Project 2 - Description (e.g., weather app)
+  - ...                     # More project folders
+  - project16/              # Project 16 - Description (e.g., full-stack web app)
+- HTML/                     # Directory for HTML files
+  - index.html
+  - lists.html
+  - hyperlinks.html
+  - multi_page_website/
+  - ...                     # Other HTML files and folders
+- CSS/                      # Directory for CSS files
+  - inline_internal_external.css
+  - css_selectors_properties.css
+  - flexbox.css
+  - bootstrap/
+  - ...                     # Other CSS files and folders
+- JavaScript/               # Directory for JavaScript files
+  - basics.js
+  - functions.js
+  - arrays.js
+  - objects.js
+  - es6_features.js
+  - dom_manipulation/
+  - ...                     # Other JavaScript files and folders
+- Node.js/                  # Directory for Node.js files
+  - node_basics.js
+  - express.js
+  - mongo_db/
+  - ...                     # Other Node.js files and folders
+- React/                    # Directory for React files
+  - react_basics.js
+  - react_state_management.js
+  - react_components.js
+  - react_forms.js
+  - react_router.js
+  - ...                     # Other React files and folders
+- Web3_and_DApps/           # Directory for Web3 and DApps files
+  - web3_basics.js
+  - smart_contract1.js
+  - smart_contract2.js
+  - ...                     # Other Web3 and DApps files and folders
+- resources/                # Additional resources (e.g., cheat sheets, design assets)
+  - cheat_sheets/
+  - design_assets/
+  - ...                     # Other resource files and folders
+- README.md                 # Main README file with course description and instructions
+- LICENSE                   # License file
+- .gitignore                # Git ignore file
+- .editorconfig             # Editor configuration file
+- package.json              # Package.json (if applicable)
+- ...                       # Other files and folders as needed
 
 
 ## License
