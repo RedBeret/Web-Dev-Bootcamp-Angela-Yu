@@ -84,15 +84,15 @@ Welcome to the Web Development Bootcamp! This repository contains all the projec
   - Description: About me!
   - Skills: HTML, CSS
 
-- <a href="RedBeret/2023-Web-Dev-Bootcamp-Angela-Yu/projects/project 3 - HTML Portfolio Project/index.html">**HTML_PERSONAL_SITES**</a>
+- **HTML_PERSONAL_SITES**
   - Description: My resume
   - Skills: HTML, Basic CSS
 
-- <a href="RedBeret/2023-Web-Dev-Bootcamp-Angela-Yu/projects/project 1 - Movie Ranking Project/movie-ranking-mine.html">**Movie Ranking Project**</a>
+- **Movie Ranking Project**
   - Description: Top movies ranked by me
   - Skills: HTML
 
-- <a href="RedBeret/2023-Web-Dev-Bootcamp-Angela-Yu/projects/project 2 - Birthday Invite Project/birthday-invite-mine.html">**Birthday Invite Project**</a>
+- **Birthday Invite Project**
   - Description: My birthday invite
   - Skills: HTML
 
