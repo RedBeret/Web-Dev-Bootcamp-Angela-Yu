@@ -84,29 +84,32 @@ Welcome to the Web Development Bootcamp! This repository contains all the projec
   - Description: About me!
   - Skills: HTML, CSS
 
-- **HTML_PERSONAL_SITES**
+- <a href="RedBeret/2023-Web-Dev-Bootcamp-Angela-Yu/projects/project 3 - HTML Portfolio Project/index.html">**HTML_PERSONAL_SITES**</a>
   - Description: My resume
   - Skills: HTML, Basic CSS
 
+- <a href="RedBeret/2023-Web-Dev-Bootcamp-Angela-Yu/projects/project 1 - Movie Ranking Project/movie-ranking-mine.html">**Movie Ranking Project**</a>
+  - Description: Top movies ranked by me
+  - Skills: HTML
+
+- <a href="RedBeret/2023-Web-Dev-Bootcamp-Angela-Yu/projects/project 2 - Birthday Invite Project/birthday-invite-mine.html">**Birthday Invite Project**</a>
+  - Description: My birthday invite
+  - Skills: HTML
+
 ## Structure
 
-- projects/                 # Directory for all the course projects
-  - project1/               # Project 1 - Description (e.g., personal portfolio website)
-  - project2/               # Project 2 - Description (e.g., weather app)
-  - ...                     # More project folders
-  - project16/              # Project 16 - Description (e.g., full-stack web app)
-- HTML/                     # Directory for HTML files
-  - index.html
-  - lists.html
-  - hyperlinks.html
-  - multi_page_website/
-  - ...                     # Other HTML files and folders
 - CSS/                      # Directory for CSS files
   - inline_internal_external.css
   - css_selectors_properties.css
   - flexbox.css
   - bootstrap/
   - ...                     # Other CSS files and folders
+- HTML/                     # Directory for HTML files
+  - index.html
+  - lists.html
+  - hyperlinks.html
+  - multi_page_website/
+  - ...                     # Other HTML files and folders
 - JavaScript/               # Directory for JavaScript files
   - basics.js
   - functions.js
@@ -120,6 +123,11 @@ Welcome to the Web Development Bootcamp! This repository contains all the projec
   - express.js
   - mongo_db/
   - ...                     # Other Node.js files and folders
+- projects/                 # Directory for all the course projects
+  - project1/               # Project 1 - Movie Ranking Project
+  - project2/               # Project 2 - Birthday Invite Project
+  - ...                     # More project folders
+  - project16/              # Project 16 - TBD
 - React/                    # Directory for React files
   - react_basics.js
   - react_state_management.js
@@ -127,15 +135,15 @@ Welcome to the Web Development Bootcamp! This repository contains all the projec
   - react_forms.js
   - react_router.js
   - ...                     # Other React files and folders
+- resources/                # Additional resources (e.g., cheat sheets, design assets)
+  - cheat_sheets/
+  - design_assets/
+  - ...                     # Other resource files and folders
 - Web3_and_DApps/           # Directory for Web3 and DApps files
   - web3_basics.js
   - smart_contract1.js
   - smart_contract2.js
   - ...                     # Other Web3 and DApps files and folders
-- resources/                # Additional resources (e.g., cheat sheets, design assets)
-  - cheat_sheets/
-  - design_assets/
-  - ...                     # Other resource files and folders
 - README.md                 # Main README file with course description and instructions
 - LICENSE                   # License file
 - .gitignore                # Git ignore file
