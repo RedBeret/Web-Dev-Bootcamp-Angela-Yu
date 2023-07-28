@@ -5,13 +5,70 @@
   <meta charset="UTF-8">
   <title>CSS Box Model</title>
   <style>
-    /* Write your CSS code here */
+    /* notes will inactivate my first attempt and make note post solution */
+    div {
+      height: 200px;
+      width: 200px;
+    }
 
+    p {
+      margin: 0;
+
+    }
+
+    #first {
+      background-color: #264653;
+      /*border-color: black;*/
+      /* This line is redundant as the color is defined in the next line */
+      padding: 20px;
+      border: 10px solid black;
+      /* This line sets border-width, border-style and border-color in one line */
+    }
+
+    #second {
+      background-color: #e9c46a;
+      /*border-top: 20px;*/
+      /* These four lines are replaced with a shorthand */
+      /*border-bottom: 20px;*/
+      /*border-left: 10px;*/
+      /*border-right: 10px;*/
+      border: 20px solid black;
+      /* Here we're setting the border-style, border-color and border-width in one line. */
+      border-width: 20px 10px;
+      /* This line sets the specific widths for top/bottom (20px) and left/right (10px) */
+      margin-left: 260px;
+    }
+
+
+    #third {
+      background-color: #e76f51;
+      /*border: 10px;*/
+      /* This line is replaced because it's not setting border-style */
+      border: 10px solid black;
+      /* Here we're setting the border-width, border-style and border-color in one line */
+      margin-left: 40px;
+    }
+
+    p {
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
 
+  <div id="first">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+      id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+      dolor metus, laoreet ac convallis sit amet, efficitur sed dolor. </p>
+  </div>
+  <div id="second">
+
+  </div>
+  <div id="third">
+
+  </div>
 
   <!-- TODOs:
 1. Create 3 Boxes using the div element.
