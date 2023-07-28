@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- This meta tag makes the webpage responsive on different devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Grid</title>
   <style>
+    /* The grid-container class defines a grid container and sets the structure of the grid. 
+    It will have 2 equal-width columns and 3 rows of specified heights. 
+    The gap property defines the size of the gap between the grid cells */
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -13,10 +17,12 @@
       gap: 30px;
     }
 
+    /* The first class will make this card span 2 columns */
     .first {
       grid-column: span 2;
     }
 
+    /* The card class sets the background color of each card */
     .card {
       background-color: blue;
     }
@@ -25,6 +31,7 @@
 
 <body>
   <h1>CSS Grid</h1>
+  <!-- This is the grid container. It contains all the cards. -->
   <div class="grid-container">
     <div class="first card"></div>
     <div class="card"></div>
@@ -32,7 +39,6 @@
     <div class="card"></div>
     <div class="card"></div>
   </div>
-
 </body>
 
 </html>

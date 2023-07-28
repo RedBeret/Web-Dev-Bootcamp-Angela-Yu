@@ -2,16 +2,18 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
   background-color: #faf9f6;
-  display: flex;
-  flex-direction: column;
   min-height: 95vh;
 }
+
 .main {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 h1 {
   font-size: 5rem;
+  text-align: center;
 }
 
 footer {
@@ -19,3 +21,55 @@ footer {
   color: midnightblue;
 }
 
+.card {
+  width: 45%;  /* adjust the card width */
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;  /* add a little margin to the image */
+}
+
+@media (max-width: 680px) {
+  .main {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;  /* card will take full width on smaller screens */
+    flex-direction: column;
+  }
+  .tile-image {
+    width: 100%; /* image will take full width on smaller screens */
+    height: auto;  /* adjust height automatically */
+    margin-right: 0;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    background: #70e1f5;
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+    background: linear-gradient(to right, #ffd194, #70e1f5);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: #ed4264;
+    background: -webkit-linear-gradient(to right, #ffedbc, #ed4264);
+    background: linear-gradient(to right, #ffedbc, #ed4264);
+  }
+}

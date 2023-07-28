@@ -10,26 +10,39 @@
   <meta charset="UTF-8">
   <title>CSS Float</title>
   <style>
+    /* Defines the display property of all divs to be inline-block, allowing them to sit next to each other horizontally if there is enough space */
     div {
       display: inline-block;
       width: 40%;
     }
 
+    /* The float property is used here to push the image to the left, allowing text and other elements to wrap around it */
+    img {
+      float: left;
+    }
+
+    /* This sets the font size of all paragraph elements */
     p {
       font-size: 2em;
     }
 
+    /* This class is applied to the cat div. It sets the background color and applies a float to the left. This means the block-level element will move as far to the left as it can */
     .cat {
       background-color: aquamarine;
+      float: left;
     }
 
+    /* This class is applied to the dog div. It sets the background color and applies a float to the right. This means the block-level element will move as far to the right as it can */
     .dog {
       background-color: coral;
+      float: right;
     }
 
+    /* The footer is styled with a center text alignment and a background color. The clear property is used to ensure that the footer will appear below both floated elements (the cat and dog divs) */
     footer {
       text-align: center;
       background-color: blueviolet;
+      clear: both;
     }
   </style>
 </head>
@@ -56,6 +69,7 @@
       frighten.</p>
   </div>
 
+  <!-- The footer will clear both floats, which means it will appear underneath the floated div elements -->
   <footer>Copyright. This is the footer</footer>
 </body>
 

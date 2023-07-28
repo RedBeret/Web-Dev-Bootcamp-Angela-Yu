@@ -12,10 +12,44 @@ TODO: Change the background color for each device
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>Media Query</title>
+
+  <title>Document</title>
   <style>
     body {
       background-color: aquamarine;
+    }
+
+    /* The @media rule is used to define different style rules for different media types/devices.
+       In this case, it sets the background color to 'lightsalmon' when the viewport width is between 319px and 480px.
+       This is typically the range for mobile devices. */
+    @media (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;
+      }
+    }
+
+    /* This media query targets devices with a viewport width between 481px and 1200px (tablets and iPads).
+       The background color is set to 'powderblue'. */
+    @media (min-width: 481px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+      }
+    }
+
+    /* This media query targets devices with a viewport width between 1201px and 1600px (laptops).
+       The background color is set to 'limegreen'. */
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      body {
+        background-color: limegreen;
+      }
+    }
+
+    /* This media query targets devices with a viewport width of 1601px or more (large desktop monitors).
+       The background color is set to 'seagreen'. */
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
     }
   </style>
 </head>

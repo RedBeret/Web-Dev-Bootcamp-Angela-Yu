@@ -3,18 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- This meta tag makes the webpage responsive on different devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query</title>
   <style>
+    /* By default, the div will have these properties: 
+       a background-color of rebeccapurple, 
+       a height of 500px, and a width of 500px */
     div {
       background-color: rebeccapurple;
       height: 500px;
       width: 500px;
     }
 
+    /* The @media rule is used in CSS to apply different styles for different media types/devices. 
+       In this case, if the viewport (the visible area of a webpage) is 600px wide or less, the style within this media query will apply */
     @media (max-width: 600px) {
 
-      /* CSS for screens below or equal to 600px wide */
+      /* CSS for screens below or equal to 600px wide. 
+         So if the viewport is 600px or less, the div will have a height and width of 200px */
       div {
         height: 200px;
         width: 200px;
@@ -25,6 +32,7 @@
 
 <body>
   <h1>Media Query</h1>
+  <!-- This div will adjust its size based on the viewport's width due to the @media rule defined in the <style> tag -->
   <div></div>
 </body>
 

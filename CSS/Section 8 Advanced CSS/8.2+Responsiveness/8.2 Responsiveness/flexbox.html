@@ -3,13 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- This meta tag makes the webpage responsive on different devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Flexbox</title>
   <style>
+    /* This class makes its children become flex items.
+    The flex items will be displayed in a row, which is the default direction of flex items */
     .flex-container {
       display: flex;
     }
 
+    /* The card class sets the background color, border size and color, and height of each card.
+    The flex property is a shorthand property for flex-grow, flex-shrink, and flex-basis.
+    It sets the ability for a flex item to grow or shrink to fill the space available in its flex container */
     .card {
       background: blue;
       border: 30px solid white;
@@ -17,10 +23,12 @@
       flex: 1;
     }
 
+    /* The first class will make this card grow to take up twice as much remaining space as the others */
     .first {
       flex: 2;
     }
 
+    /* The second class will make this card shrink to half the size of a normal card when there isn't enough space */
     .second {
       flex: 0.5;
     }
@@ -29,14 +37,13 @@
 
 <body>
   <h1>CSS Flexbox</h1>
+  <!-- This is the flex container. It contains all the cards. The cards will grow and shrink as per their flex property values -->
   <div class="flex-container">
     <div class="first card"></div>
     <div class="second card"></div>
     <div class="card"></div>
     <div class="card"></div>
   </div>
-
-
 </body>
 
 </html>

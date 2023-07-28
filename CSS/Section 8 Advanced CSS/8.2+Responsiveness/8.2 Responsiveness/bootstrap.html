@@ -3,28 +3,34 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- This meta tag makes the webpage responsive on different devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Framework</title>
+  <!-- Bootstrap CSS library is imported from CDN (Content Delivery Network) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
   <h1>Bootstrap Framework</h1>
+  <!-- This is a Bootstrap container class, which is a responsive, fixed-width container -->
   <div class="container">
+    <!-- The row class is a horizontal grouping for columns -->
     <div class="row">
+      <!-- Bootstrap grid system has 12 columns across the page. So, col-6 means the element should take up half the width (6/12) of the row on all screen sizes. "card" is a Bootstrap component to display content built with flexible containers and extensible modifier classes. -->
       <div class="card col-6">
         Card
       </div>
+      <!-- This card will take up 2/12 of the row on all screen sizes. -->
       <div class="card col-2">
         Card
       </div>
+      <!-- This card will take up 4/12 of the row on all screen sizes. -->
       <div class="card col-4">
         Card
       </div>
     </div>
   </div>
-
 
 </body>
 
