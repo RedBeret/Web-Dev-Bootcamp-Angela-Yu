@@ -151,10 +151,6 @@ Welcome to the Web Development Bootcamp! This repository contains all the projec
 - package.json              # Package.json (if applicable)
 - ...                       # Other files and folders as needed
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 Special thanks to Dr. Angela Yu for creating this amazing web development bootcamp.
