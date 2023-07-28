@@ -1,4 +1,4 @@
-# The Complete Web Development Bootcamp (Completing in 2023)
+# The Complete 2023 Web Development Bootcamp
 
 ## Description
 
