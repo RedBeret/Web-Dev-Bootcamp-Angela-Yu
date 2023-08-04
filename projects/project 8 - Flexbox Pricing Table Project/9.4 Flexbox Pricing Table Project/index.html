@@ -7,18 +7,81 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Set the background color of the entire document */
     body {
       font-family: 'Sono', sans-serif;
+      background-color: #f0f0f0;
     }
 
-    /* Hint: What can you do with a media query and flexbox? */
+    /* Here, we're using the flex display to create a responsive layout */
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    /* Each pricing-plan will evenly share the container's width */
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #a2d5f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    /* Here we style the title and price. Adjust these as needed. */
+    .plan-title,
+    .plan-price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price {
+      font-size: 48px;
+    }
+
+    /* This block removes default styles from the list and adds a margin to list items */
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    /* Styling for the button, with a transition for a smooth hover effect */
+    .plan-button {
+      padding: 10px;
+      background-color: #1b4f72;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Change button color on hover */
+    .plan-button:hover {
+      background-color: #154360;
+    }
+
+    /* At a viewport width of 1250px or smaller, the layout switches to a column */
     @media (max-width: 1250px) {
-      
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
+  <!-- We have a container with three plans. Each plan is a div containing the title, price, list of features, and a sign up button -->
   <div class="pricing-container">
     <div class="pricing-plan">
       <div class="plan-title">Basic</div>
@@ -30,6 +93,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
+
     <div class="pricing-plan">
       <div class="plan-title">Standard</div>
       <div class="plan-price">$19.99/month</div>
@@ -40,6 +104,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
+
     <div class="pricing-plan">
       <div class="plan-title">Premium</div>
       <div class="plan-price">$49.99/month</div>
@@ -50,6 +115,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
+
   </div>
 
 </body>

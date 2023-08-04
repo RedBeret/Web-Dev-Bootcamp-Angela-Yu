@@ -10,28 +10,58 @@
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
   -->
   <style>
+    /* The container class will have white text, a gold border, and a column-oriented flex layout */
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
+      flex-direction: column;
     }
 
     /*
 Select all the elements that are the direct
 children of the .container class.
     */
+    /* This selector targets all direct children of .container. These children will have a flex-basis (initial size of a flex item) of 100px. */
 
-    .red {background-color: #eb4d4b;}
-    .orange {background-color: #f0932b;}
-    .yellow {background-color: #f6e58d;}
-    .green {background-color: #6ab04c;}
-    .blue {background-color: #4834d4;}
-    .indigo {background-color: #30336b;}
-    .purple {background-color: #be2edd;}
+    .container>* {
+      flex-basis: 100px;
+    }
+
+    /* Each of these classes applies a background color to an element */
+    .red {
+      background-color: #eb4d4b;
+    }
+
+    .orange {
+      background-color: #f0932b;
+    }
+
+    .yellow {
+      background-color: #f6e58d;
+    }
+
+    .green {
+      background-color: #6ab04c;
+    }
+
+    .blue {
+      background-color: #4834d4;
+    }
+
+    .indigo {
+      background-color: #30336b;
+    }
+
+    .purple {
+      background-color: #be2edd;
+    }
   </style>
 </head>
 
 <body>
+
+  <!-- The .container div contains several child divs, each with a different background color and the name of the color as text content -->
   <div class="container">
     <div class="red">Red</div>
     <div class="orange">Orange</div>
@@ -41,7 +71,7 @@ children of the .container class.
     <div class="indigo">Indigo</div>
     <div class="purple">Purple</div>
   </div>
-  
+
 </body>
 
 </html>
