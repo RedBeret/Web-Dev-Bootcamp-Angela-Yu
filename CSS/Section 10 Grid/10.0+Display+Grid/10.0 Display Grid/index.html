@@ -7,10 +7,38 @@
     /* Write your code here */
     /* Each square should be 100px by 100px */
     /* My colours for white: #f0d9b5, black: #b58863 */
+
+    /* Global style setup for the chessboard */
+    /* Using a grid display to create the 8x8 chessboard layout */
+    .container {
+      width: 800px;
+      /* Size of the full chessboard */
+      display: grid;
+      /* The fr is a unit used in CSS grid layout. It stands for "fraction of available space." It's a way to define proportions of the available space within the grid container.*/
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      /* 8 columns of equal size for the 8 squares in each row */
+      grid-template-rows: repeat(8, 1fr);
+      /* Alternative method 8 rows of equal size for the 8 squares in each column */
+    }
+
+    /* Styling the white squares */
+    .white {
+      height: 100px;
+      width: 100px;
+      background-color: #f0d9b5;
+    }
+
+    /* Styling the black squares */
+    .black {
+      height: 100px;
+      width: 100px;
+      background-color: #b58863;
+    }
   </style>
 </head>
 
 <body>
+  <!-- Chessboard container -->
   <div class="container">
     <div class="white"></div>
     <div class="black"></div>
