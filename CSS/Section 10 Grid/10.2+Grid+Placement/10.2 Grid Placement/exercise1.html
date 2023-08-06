@@ -13,8 +13,14 @@
 
     .container {
       height: 100vh;
+      /* Takes up the full height of the viewport */
       display: grid;
+      /* Space between grid items */
       gap: 3rem;
+
+      /* Setting up columns and rows. 
+         1fr means one fraction of the available space.
+         Here, the columns are divided into 1, 1, and 1.5 parts. */
       grid-template-columns: 1fr 1fr 1.5fr;
       grid-template-rows: 1fr 1fr;
     }
@@ -26,12 +32,16 @@
       background-color: blueviolet;
       /* TODO: Use Flexbox to align the text to the center horizontally and vertically. 
       See goal1 image.
-      */
+      /* Flexbox Centering content (emoji) both vertically and horizontally */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
 
 <body>
+  <!-- Main grid container -->
   <div class="container">
     <div class="item cowboy">🤠</div>
     <div class="item astronaut">👨‍🚀</div>

@@ -6,50 +6,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid Placement</title>
   <style>
+    /* Basic reset to remove default margin and padding from the body */
     body {
       padding: 0;
       margin: 0;
     }
 
+    /* Grid container setup */
     .container {
       height: 100vh;
+      /* Make the container fill the viewport height */
       display: grid;
+      /* Activate grid layout */
       gap: 3rem;
+      /* Define the spacing between grid items */
+
+      /* Set up grid columns and rows:
+         - columns: three columns with sizes 1fr, 1fr, and 1.5fr
+         - rows: two rows, each taking up an equal fraction of the container */
       grid-template-columns: 1fr 1fr 1.5fr;
       grid-template-rows: 1fr 1fr;
     }
 
+    /* Base styling for individual grid items */
     .item {
       font-size: 5rem;
       color: white;
       font-family: Arial, Helvetica, sans-serif;
       background-color: blueviolet;
+
+      /* Flexbox for centering content inside each grid item */
       display: flex;
       align-items: center;
+      /* Center vertically */
       justify-content: center;
-
+      /* Center horizontally */
     }
 
+    /* Styling specific to the cowboy emoji */
     .cowboy {
       background-color: #00B9FF;
       grid-column: span 2;
+      /* Make it span two columns */
     }
 
+    /* Styling specific to the astronaut emoji */
     .astronaut {
       background-color: #03989E;
       order: 1;
+      /* Change default grid item placement order */
       grid-area: 2 / 1 / 3 / 3;
+      /* Define its grid placement: start at 2nd row, 1st column and end at 3rd row, 3rd column */
     }
 
+    /* Styling specific to the book emoji */
     .book {
-      background-color: #E58331;
-      /* TODO: Make the book div look like 
-      the goal3 image using grid-row. */
+      background-color: #E5833177;
+      /* TODO: Make the book div look like the goal3 image using grid-row. */
+      /* TODO: Custom placement for the book emoji will be defined here */
+      grid-area: 1 / 3 / 3 / 4
     }
   </style>
 </head>
 
 <body>
+  <!-- Main container holding the grid items -->
   <div class="container">
     <div class="item cowboy">🤠</div>
     <div class="item astronaut">👨‍🚀</div>
