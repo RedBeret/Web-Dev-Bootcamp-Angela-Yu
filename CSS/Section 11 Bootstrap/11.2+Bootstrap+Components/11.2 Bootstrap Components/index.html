@@ -2,25 +2,40 @@
 <html lang="en">
 
 <head>
+  <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Components</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <style>
 
+  <!-- Title -->
+  <title>Bootstrap Components</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  <!-- Custom Styles -->
+  <style>
+    /* Add your custom styles here */
   </style>
 </head>
 
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
+      <!-- Brand -->
       <a class="navbar-brand" href="#"><img src="./box-seam.svg" alt="moveit brand icon"> Move It</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Navbar Content -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar Links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -28,6 +43,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
+          <!-- Dropdown Menu -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
@@ -40,6 +56,8 @@
             </ul>
           </li>
         </ul>
+
+        <!-- Search Form -->
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Postcode" aria-label="Postcode">
           <button class="btn btn-outline-success" type="submit">Check</button>
@@ -47,11 +65,12 @@
       </div>
     </div>
   </nav>
-  </div>
+
+  <!-- Hero Section -->
   <div class="px-4 pt-5 my-5 text-center border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap...</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
         <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
@@ -59,72 +78,67 @@
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
       <div class="container px-5">
-        <img src="moving-van.jpg"img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        <img src="moving-van.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" 
+             width="700" height="500" loading="lazy">
       </div>
     </div>
   </div>
-  
-  <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Why Move With Us?</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img src="./briefcase.svg" alt="briefcase" height="30">
-        </div>
-        <h3 class="fs-2">Professional</h3>
-        <p>Our team of professional movers are trained to prioritize efficiency, organization, and attention to detail.
-          We
-          understand that your possessions are more than just objects - they are a reflection of your life, memories,
-          and
-          experiences. That's why we take extra care to ensure that everything is packed and transported with the utmost
-          care and
-          attention.</p>
-        <a href="#" class="icon-link">
-          Get a quote
-          <img src="./chevron-right.svg" alt="chevron-right">
-        </a>
+
+
+    <!-- Featured Services/Advantages Section -->
+    <div class="container px-4 py-5" id="featured-3">
+
+      <!-- Section Title -->
+      <h2 class="pb-2 border-bottom">Why Move With Us?</h2>
+
+      <!-- Service Highlights Row -->
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+          <!-- Feature 1: Professional Service -->
+          <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <!-- Icon for Professional Service -->
+                  <img src="./briefcase.svg" alt="briefcase" height="30">
+              </div>
+              <h3 class="fs-2">Professional</h3>
+              <p>Our team of professional movers are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is packed and transported with the utmost care and attention.</p>
+              <a href="#" class="icon-link">
+                  Get a quote
+                  <!-- Arrow icon for link -->
+                  <img src="./chevron-right.svg" alt="chevron-right">
+              </a>
+          </div>
+
+          <!-- Feature 2: Countrywide Coverage -->
+          <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <!-- Icon for Countrywide Service -->
+                  <img src="./bus-front.svg" alt="bus-front" height="30">
+              </div>
+              <h3 class="fs-2">Countrywide</h3>
+              <p>We offer a range of services to suit your individual needs, whether you're moving locally or across the country. Our team can handle everything from packing and loading to unloading and unpacking, so you can focus on settling into your new home. And with our transparent pricing and no hidden fees, you can trust that you're getting a fair and competitive rate for our services.</p>
+              <a href="#" class="icon-link">
+                  Get a quote
+                  <!-- Arrow icon for link -->
+                  <img src="./chevron-right.svg" alt="chevron-right">
+              </a>
+          </div>
+
+          <!-- Feature 3: Personalized Service -->
+          <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <!-- Icon for Personalized Service -->
+                  <img src="./chat-square-heart.svg" alt="chat-square-heart" height="30">
+              </div>
+              <h3 class="fs-2">Personal Touch</h3>
+              <p>At our core, we believe that moving should be an exciting and positive experience, not a stressful one. By providing exceptional moving services in the US, we hope to revolutionize the way people think about moving and provide a better, more personalized experience for our customers. Contact us today to learn more about how we can help you with your next move.</p>
+              <a href="#" class="icon-link">
+                  Get a quote
+                  <!-- Arrow icon for link -->
+                  <img src="./chevron-right.svg" alt="chevron-right">
+              </a>
+          </div>
       </div>
-      <div class="feature col">
-        <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img src="./bus-front.svg" alt="bus-front" height="30">
-        </div>
-        <h3 class="fs-2">Countrywide</h3>
-        <p>We offer a range of services to suit your individual needs, whether you're moving locally or across the
-          country. Our
-          team can handle everything from packing and loading to unloading and unpacking, so you can focus on settling
-          into your
-          new home. And with our transparent pricing and no hidden fees, you can trust that you're getting a fair and
-          competitive
-          rate for our services.</p>
-        <a href="#" class="icon-link">
-          Get a quote
-          <img src="./chevron-right.svg" alt="chevron-right">
-        </a>
-      </div>
-      <div class="feature col">
-        <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img src="./chat-square-heart.svg" alt="chat-square-heart" height="30">
-        </div>
-        <h3 class="fs-2">Personal Touch</h3>
-        <p>At our core, we believe that moving should be an exciting and positive experience, not a stressful one. By
-          providing
-          exceptional moving services in the US, we hope to revolutionize the way people think about moving and provide
-          a better,
-          more personalized experience for our customers. Contact us today to learn more about how we can help you with
-          your next
-          move.</p>
-        <a href="#" class="icon-link">
-          Get a quote
-          <img src="./chevron-right.svg" alt="chevron-right">
-        </a>
-      </div>
-    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-</body>
-
-</html>
+  <!-- Bootstrap JS Bundle -->
