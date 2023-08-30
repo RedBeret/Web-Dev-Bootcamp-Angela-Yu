@@ -1,28 +1,155 @@
-.gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 0;
+  color: #2C3E50; 
 }
 
-.profile-img {
-  height: 100px;
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Intro Section */
+.introduction {
+  padding: 50px 0;
+}
+
+.introduction img {
+  max-width: 200px;
+  margin: 0 auto 20px;
   border-radius: 50%;
+  display: block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+  padding: 50px 0;
+  background-color: #eaeaea;
+}
+
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skill {
+  flex: 1;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1.1rem;
+}
+
+/* Certifications Section */
+.certifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certifications .list-group-item {
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border: none;
+}
+
+/* Contact Section */
+.contact h2 {
+  font-size: 2.5rem;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border: none;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; 
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #2C3E50; 
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero {
+      padding: 60px 0;
+  }
 }
