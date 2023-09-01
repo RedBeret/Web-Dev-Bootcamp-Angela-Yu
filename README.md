@@ -127,7 +127,6 @@ Welcome to the Web Development Bootcamp! This repository contains all the projec
   - project1/               # Project 1 - Movie Ranking Project
   - project2/               # Project 2 - Birthday Invite Project
   - ...                     # More project folders
-  - project16/              # Project 16 - TBD
 - React/                    # Directory for React files
   - react_basics.js
   - react_state_management.js
