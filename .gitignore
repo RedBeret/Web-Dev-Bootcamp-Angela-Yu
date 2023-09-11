@@ -1,1 +1,25 @@
-build/
+# Ignore node_modules in any directory
+**/node_modules/
+
+# Ignore build/ directories
+**/build/
+
+# IDE and editor folders/files
+**/.vscode/
+*.log
+*.idea/
+*.DS_Store
+
+# OS generated
+Thumbs.db
+.DS_Store?
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ignore .env files (usually containing secrets or environment-specific configurations)
+.env
+
+# Dist directory (often used for production builds)
+**/dist/
