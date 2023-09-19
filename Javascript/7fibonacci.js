@@ -4,7 +4,7 @@ function fibonacciGenerator (n) {
   // Write your code here:
 
   // Initialize an empty array to store the Fibonacci sequence
-  const output = [];
+  var output = [];
 
   // Manually populate the first two numbers in the sequence (0 and 1) only if n is greater than 0
   if (n > 0) output.push(0);
