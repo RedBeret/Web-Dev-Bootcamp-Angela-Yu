@@ -1,4 +1,4 @@
-<h1 align="left">The Complete 2023 Web Development Bootcamp <img src="https://img.shields.io/badge/Progress-30%25-brightgreen" alt="Progress"/></h1>
+<h1 align="left">The Complete 2023 Web Development Bootcamp <img src="https://img.shields.io/badge/Progress-40%25-brightgreen" alt="Progress"/></h1>
 
 ## 📌 Description
 
