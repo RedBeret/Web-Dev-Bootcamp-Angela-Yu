@@ -1,0 +1,34 @@
+name: Example dependency security
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '32 9 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: example-security-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  audit-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '22'
+      - name: Install and audit every locked example
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' lock; do
+            (cd "$(dirname "$lock")" && npm ci --ignore-scripts && npm audit --audit-level=high)
+          done < <(git ls-files -z '*package-lock.json')
+      - name: Exercise completed example routes
+        run: node scripts/check-examples.mjs
+      - name: Check whitespace
+        run: git diff --check
